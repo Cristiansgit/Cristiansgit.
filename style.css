@@ -68,6 +68,11 @@ p{
 .introducao h1{
     font-size: 2rem;
 }
+.introducao-cover img{
+    object-fit: cover;
+    height: 100%;
+
+}
 .detalhe{
     width: 60px;
     height: 4px;
@@ -118,4 +123,31 @@ p{
     text-align: center;
     padding: 40px;
     box-sizing: border-box;
+}
+@media(max-width: 1000px ){
+    .conteudo{
+        grid-template-columns: 1fr;
+    }
+    .subtitulo{
+        text-align: center;
+    }
+    .detalhe{
+        display: none;
+    }
+}
+
+@media(max-width:600px){
+    body{
+        gap: 30px;
+    }
+    .conteudo{
+        grid-template-columns: 1fr;
+    }
+    .header{
+        gap: 30px;
+    }
+    .introducao{
+        text-align: left;
+        justify-items: start;
+    }
 }
